@@ -13,6 +13,8 @@ export default {
         blue: "var(--blue)",
         orange: "var(--orange)",
         white: "var(--white)",
+        white2: "var(--white-2)",
+        white3: "var(--white-3)",
       },
     },
   },

@@ -7,17 +7,36 @@
   --blue: #0a0f33;
   --orange: #f97e4b;
   --white: #ffffff;
+  --white-2: #f3f3f3;
+  --white-3: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.test1 {
+  border: 2px solid var(--green);
+}
+
+.test2 {
+  border: 2px solid var(--blue);
+}
+
+.test3 {
+  border: 2px solid var(--orange);
+}
+
+.rotate {
+  transform: rotate(26deg) translateY(50px);
+  overflow: hidden;
 }
