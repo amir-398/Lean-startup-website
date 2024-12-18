@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero1 = () => {
   return (
-    <section className=" flex justify-between">
+    <section className=" flex justify-between px-20">
       <div className=" flex flex-col w-1/2 justify-center">
         <div className="mb-5">
           <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
