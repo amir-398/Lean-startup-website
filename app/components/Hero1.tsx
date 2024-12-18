@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero1 = () => {
   return (
-    <div className=" flex justify-between">
+    <section className=" flex justify-between">
       <div className=" flex flex-col w-1/2 justify-center">
         <div className="mb-5">
           <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
@@ -27,10 +27,15 @@ const Hero1 = () => {
       </div>
       <div className=" w-1/2 flex justify-center">
         <div className=" rotate">
-          <Image src="/iphone16.png" alt="mockup" width={240} height={240} />
+          <Image
+            src="/iphone16double.png"
+            alt="mockup"
+            width={240}
+            height={240}
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

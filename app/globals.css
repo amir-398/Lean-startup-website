@@ -8,7 +8,7 @@
   --orange: #f97e4b;
   --white: #ffffff;
   --white-2: #f3f3f3;
-  --white-3: #fafafa;
+  --white-3: #fafafa0c;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -29,11 +29,19 @@ body {
 }
 
 .test2 {
-  border: 2px solid var(--blue);
+  border: 2px solid aqua;
 }
 
 .test3 {
   border: 2px solid var(--orange);
+}
+
+.test4 {
+  border: 2px solid purple;
+}
+
+.test5 {
+  border: 2px solid red;
 }
 
 .rotate {
