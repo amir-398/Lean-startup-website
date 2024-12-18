@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero2 = () => {
   return (
-    <section className="bg-white2 flex flex-col px-20 rounded-3xl">
+    <section className="bg-white2 flex flex-col px-20 py-10 rounded-3xl font-medium">
       <div className=" flex">
         <div className="flex flex-col">
           <h3 className="text-orange font-semibold">
@@ -18,7 +18,7 @@ const Hero2 = () => {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center ">
-          <p className="w-3/4 text-slate-800 text-sm leading-loose">
+          <p className="w-3/4 text-grey text-sm leading-loose">
             Organiser un match ou rejoindre une équipe, c’est souvent compliqué
             : horaires, lieux, niveaux... Mais on a la solution pour toi !
           </p>
@@ -51,7 +51,7 @@ const Hero2 = () => {
             </h2>
             <div className="flex">
               <div className=" w-3/5">
-                <p className="text-slate-800 text-sm leading-loose">
+                <p className="text-grey text-sm leading-loose">
                   Choisis le lieu, l’heure et le niveau, invite des joueurs en
                   quelques clics et laisse notre algorithme s’occuper du reste
                 </p>
@@ -72,7 +72,7 @@ const Hero2 = () => {
               Créer des équipes selon ton niveau
             </h2>
             <br />
-            <p className="text-slate-800 text-sm">
+            <p className="text-grey text-sm">
               Des avantages pour rendre tes matchs encore meilleurs
             </p>
           </div>

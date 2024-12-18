@@ -15,6 +15,7 @@ export default {
         white: "var(--white)",
         white2: "var(--white-2)",
         white3: "var(--white-3)",
+        grey: "var(--grey)",
       },
     },
   },
