@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero4 = () => {
   return (
-    <section className="flex flex-col px-20 py-10 rounded-3xl font-medium items-center bg-white2">
+    <section className="flex flex-col px-5 py-10 rounded-3xl font-medium items-center bg-white2 md:px-20">
       <p className="text-orange font-semibold flex items-center">MATCHMAKING</p>
 
       <h3 className="font-bold text-3xl">

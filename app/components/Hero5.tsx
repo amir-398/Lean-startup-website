@@ -60,7 +60,7 @@ const Hero5 = () => {
     }
   };
   return (
-    <section className="flex flex-col px-20 py-10 rounded-3xl font-medium items-center ">
+    <section className="flex flex-col px-5 py-10 rounded-3xl font-medium items-center px-20">
       <div className="flex p-5 flex-col w-full md:flex-row">
         <div className="flex flex-col w-full md:w-1/2 p-5 flex-shrink-0 overflow-auto">
           <p className="text-orange font-semibold flex items-center">FAQ</p>

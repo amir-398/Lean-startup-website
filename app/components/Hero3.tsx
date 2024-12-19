@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero3 = () => {
   return (
-    <section className="flex flex-col px-20 py-10 rounded-3xl font-medium">
+    <section className="flex flex-col px-5 py-10 rounded-3xl font-medium md:px-20">
       <div className="flex flex-col-reverse items-center md:flex-row justify-center">
         <div className="w-1/2 h-auto">
           <Image
