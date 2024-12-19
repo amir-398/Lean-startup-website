@@ -9,16 +9,6 @@ export const montSerrat = Montserrat({
   display: "swap",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: "Ludora",
   description: "Ludora's landing page",
@@ -31,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={montSerrat.className}>
+      <body className={montSerrat.className} style={{ paddingTop: "3.5rem" }}>
         <Header />
         {children}
         <Footer />

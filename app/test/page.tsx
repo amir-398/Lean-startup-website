@@ -63,7 +63,7 @@ export default function Test() {
               </p>
             </div>
             <div className="grid gap-2">
-              <div className="grid grid-cols-3 items-center gap-4">
+              <div className="grid grid-cols-3 items-center gap-4 flex-row">
                 <Label htmlFor="nom">Nom</Label>
                 <Field
                   id="nom"
@@ -77,7 +77,7 @@ export default function Test() {
                   className="text-red-500 text-sm mt-1"
                 />
               </div>
-              <div className="grid grid-cols-3 items-center gap-4">
+              <div className="grid grid-cols-3 items-center gap-4 flex-row">
                 <Label htmlFor="prénom">Prénom</Label>
                 <Field
                   id="prénom"
@@ -91,7 +91,7 @@ export default function Test() {
                   className="text-red-500 text-sm mt-1"
                 />
               </div>
-              <div className="grid grid-cols-3 items-center gap-4">
+              <div className="grid grid-cols-3 items-center gap-4 flex-row">
                 <Label htmlFor="email">Email</Label>
                 <Field
                   id="email"
@@ -105,7 +105,7 @@ export default function Test() {
                   className="text-red-500 text-sm mt-1"
                 />
               </div>
-              <div className="grid grid-cols-3 items-center gap-4">
+              <div className="grid grid-cols-3 items-center gap-4 flex-row">
                 <Label htmlFor="dateDeNaissance">Date de naissance</Label>
                 <Field
                   id="dateDeNaissance"
@@ -124,7 +124,7 @@ export default function Test() {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-orange rounded-xl font-medium w-1/4 p-2 hover:border-2 hover:border-green"
+                className="bg-orange rounded-xl w-44 h-16  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
                 disabled={loading}
               >
                 {loading ? "Envoi..." : "Envoyer"}

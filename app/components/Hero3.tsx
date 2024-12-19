@@ -31,9 +31,9 @@ const Hero3 = () => {
           </h3>
           <p className="text-grey text-sm leading-loose">
             Grâce à nos partenariats avec des centres sportifs privés comme
-            Five, Urban Soccer, ou d'autres complexes de sports collectifs, nous
-            te proposons des tarifs exclusifs et des réductions pour organiser
-            tes matchs en toute simplicité.
+            Five, Urban Soccer, ou d&aposautres complexes de sports collectifs,
+            nous te proposons des tarifs exclusifs et des réductions pour
+            organiser tes matchs en toute simplicité.
           </p>
           <ul className="text-grey text-sm list-disc list-inside mt-2">
             <li>Réductions sur les terrains</li>

@@ -69,7 +69,7 @@ const Hero1 = () => {
         <Popover>
           <PopoverTrigger asChild>
             <button className="bg-orange rounded-3xl pl-2 pr-2 pt-1 pb-1 text-gray-50 w-40 flex items-center justify-center">
-              Je m'inscris
+              Je m&aposinscris
               <Image
                 className="ml-2"
                 src="/right-arrow.svg"
@@ -96,11 +96,11 @@ const Hero1 = () => {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none">Inscriptions</h4>
                       <p className="text-sm text-gray">
-                        L'application est en cours de développement.
+                        L&aposapplication est en cours de développement.
                       </p>
                     </div>
                     <div className="grid gap-2">
-                      <div className="grid grid-cols-3 items-center gap-4">
+                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
                         <Label htmlFor="nom">Nom</Label>
                         <Field
                           id="nom"
@@ -114,7 +114,7 @@ const Hero1 = () => {
                           className="text-red-500 text-sm mt-1"
                         />
                       </div>
-                      <div className="grid grid-cols-3 items-center gap-4">
+                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
                         <Label htmlFor="prénom">Prénom</Label>
                         <Field
                           id="prénom"
@@ -128,7 +128,7 @@ const Hero1 = () => {
                           className="text-red-500 text-sm mt-1"
                         />
                       </div>
-                      <div className="grid grid-cols-3 items-center gap-4">
+                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
                         <Label htmlFor="email">Email</Label>
                         <Field
                           id="email"
@@ -142,7 +142,7 @@ const Hero1 = () => {
                           className="text-red-500 text-sm mt-1"
                         />
                       </div>
-                      <div className="grid grid-cols-3 items-center gap-4">
+                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
                         <Label htmlFor="dateDeNaissance">
                           Date de naissance
                         </Label>
@@ -163,7 +163,7 @@ const Hero1 = () => {
                     <div className="flex justify-center">
                       <button
                         type="submit"
-                        className="bg-orange rounded-xl font-medium w-1/4 p-2 hover:border-2 hover:border-green"
+                        className="bg-orange rounded-xl w-44 h-16  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
                         disabled={loading}
                       >
                         {loading ? "Envoi..." : "Envoyer"}
@@ -176,8 +176,8 @@ const Hero1 = () => {
           </PopoverContent>
         </Popover>
       </div>
-      <div className=" flex justify-center absolute right-5">
-        <div className="rotate flex justify-center">
+      <div className=" flex justify-center absolute right-24">
+        <div className=" rotate flex justify-center">
           <Image
             src="/iphone16double.png"
             alt="mockup"

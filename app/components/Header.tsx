@@ -72,8 +72,8 @@ const Header = () => {
         <div>
           <Popover>
             <PopoverTrigger asChild>
-              <button className="bg-orange rounded-3xl pl-2 pr-2 pt-1 pb-1 text-gray-50 w-40 flex items-center justify-center">
-                S'inscrire
+              <button className="hidden bg-orange rounded-3xl pl-2 pr-2 pt-1 pb-1 text-gray-50 w-40 sm:flex items-center justify-center">
+                S&aposinscrire
               </button>
             </PopoverTrigger>
             <PopoverContent className="w-80">
@@ -95,11 +95,11 @@ const Header = () => {
                           Inscriptions
                         </h4>
                         <p className="text-sm text-gray">
-                          L'application est en cours de développement.
+                          L&aposapplication est en cours de développement.
                         </p>
                       </div>
                       <div className="grid gap-2">
-                        <div className="grid grid-cols-3 items-center gap-4">
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
                           <Label htmlFor="nom">Nom</Label>
                           <Field
                             id="nom"
@@ -113,7 +113,7 @@ const Header = () => {
                             className="text-red-500 text-sm mt-1"
                           />
                         </div>
-                        <div className="grid grid-cols-3 items-center gap-4">
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
                           <Label htmlFor="prénom">Prénom</Label>
                           <Field
                             id="prénom"
@@ -127,7 +127,7 @@ const Header = () => {
                             className="text-red-500 text-sm mt-1"
                           />
                         </div>
-                        <div className="grid grid-cols-3 items-center gap-4">
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
                           <Label htmlFor="email">Email</Label>
                           <Field
                             id="email"
@@ -141,7 +141,7 @@ const Header = () => {
                             className="text-red-500 text-sm mt-1"
                           />
                         </div>
-                        <div className="grid grid-cols-3 items-center gap-4">
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
                           <Label htmlFor="dateDeNaissance">
                             Date de naissance
                           </Label>
@@ -162,7 +162,7 @@ const Header = () => {
                       <div className="flex justify-center">
                         <button
                           type="submit"
-                          className="bg-orange rounded-xl font-medium w-1/4 p-2 hover:border-2 hover:border-green"
+                          className="bg-orange rounded-xl w-44 h-16  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
                           disabled={loading}
                         >
                           {loading ? "Envoi..." : "Envoyer"}
