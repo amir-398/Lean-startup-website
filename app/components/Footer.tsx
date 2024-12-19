@@ -69,7 +69,7 @@ export default function Footer() {
               onSubmit={submitBtn}
             >
               {({ isSubmitting }) => (
-                <Form className="flex gap-5 flex-col sm:flex-row items-center">
+                <Form className="flex gap-5 flex-col sm:flex-row pt-5 sm:h-24 h-36 items-center sm:items-start">
                   <div>
                     <Field
                       type="email"
@@ -85,7 +85,7 @@ export default function Footer() {
                   </div>
                   <button
                     type="submit"
-                    className="bg-orange rounded-xl w-44 py-2 text-gray-50 font-bold flex items-center justify-center cursor-pointer"
+                    className="bg-orange rounded-xl w-44 h-16  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
                     disabled={isSubmitting}
                   >
                     {!loading && "S'inscrire"}
