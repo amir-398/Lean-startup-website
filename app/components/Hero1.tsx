@@ -3,9 +3,9 @@ import React from "react";
 
 const Hero1 = () => {
   return (
-    <section className=" flex justify-between px-20 py-10 font-medium">
-      <div className=" flex flex-col w-1/2 justify-center">
-        <div className="mb-5">
+    <section className="flex flex-col justify-between items-center px-20 py-10 font-medium md:flex-row ">
+      <div className=" flex w-full justify-center flex-col flex-1 items-center md:w-1/2">
+        <div className="lg:mb-5">
           <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
           <h1 className="font-bold text-5xl">Trouves ton équipe.</h1>
         </div>
@@ -25,13 +25,14 @@ const Hero1 = () => {
           />
         </button>
       </div>
-      <div className=" w-1/2 flex justify-center">
-        <div className=" rotate">
+      <div className=" flex justify-center absolute right-5">
+        <div className="rotate flex justify-center">
           <Image
             src="/iphone16double.png"
             alt="mockup"
             width={240}
             height={240}
+            className="hidden lg:block"
           />
         </div>
       </div>

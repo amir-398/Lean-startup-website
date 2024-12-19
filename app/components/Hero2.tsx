@@ -4,28 +4,34 @@ import React from "react";
 const Hero2 = () => {
   return (
     <section className="bg-white2 flex flex-col px-20 py-10 rounded-3xl font-medium">
-      <div className=" flex">
-        <div className="flex flex-col">
-          <h3 className="text-orange font-semibold">
-            POURQUOI CETTE APPICATION ?
-          </h3>
-          <h2 className="font-semibold text-3xl">
-            Marre de jouer seul ? Trouve tes Partenaires de jeu facilement !
-          </h2>
+      <div className="flex flex-col">
+        <div className="flex flex-col  md:flex-row">
+          <div className=" flex flex-col">
+            <h3 className="text-orange font-semibold">
+              POURQUOI CETTE APPICATION ?
+            </h3>
+            <h4 className="font-semibold text-3xl">
+              Marre de jouer seul ? Trouve tes Partenaires de jeu facilement !
+            </h4>
+          </div>
+
           <br />
+          <div className="flex flex-col justify-center items-center ">
+            <p className="w-3/4 text-grey text-sm leading-loose">
+              Organiser un match ou rejoindre une équipe, c’est souvent
+              compliqué : horaires, lieux, niveaux... Mais on a la solution pour
+              toi !
+            </p>
+          </div>
+        </div>
+        <div className="flex ">
           <p className="text-gray-600 text-sm">
             NOTRE APPLICATION TE PERMET DE:
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center ">
-          <p className="w-3/4 text-grey text-sm leading-loose">
-            Organiser un match ou rejoindre une équipe, c’est souvent compliqué
-            : horaires, lieux, niveaux... Mais on a la solution pour toi !
-          </p>
-        </div>
       </div>
-      <div className=" h-3/4 flex mt-3">
-        <div className=" w-1/2 bg-green text-white rounded-3xl mr-2 flex flex-col items-center p-5">
+      <div className=" h-3/4 flex mt-3 flex-col  lg:flex-row ">
+        <div className="bg-green text-white rounded-3xl w-full flex flex-col items-center p-5 mb-2 lg:w-1/2 mr-2">
           <h2 className=" font-semibold text-3xl">
             Trouver des joueurs près de chez toi
           </h2>
@@ -44,8 +50,8 @@ const Hero2 = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 flex flex-col">
-          <div className=" bg-white3 rounded-3xl ml-2 mb-2 flex flex-col p-5">
+        <div className="w-full flex flex-col lg:w-1/2 mr-2">
+          <div className=" bg-white3 rounded-3xl ml-2 mb-2 mt-2 flex flex-col p-5">
             <h2 className="font-bold text-3xl">
               Organiser rapidement <br /> des matchs
             </h2>

@@ -4,7 +4,7 @@ import React from "react";
 const Hero3 = () => {
   return (
     <section className="flex flex-col px-20 py-10 rounded-3xl font-medium">
-      <div className="flex justify-center">
+      <div className="flex flex-col-reverse items-center md:flex-row justify-center">
         <div className="w-1/2 h-auto">
           <Image
             src="/basketball.jpg"
@@ -15,7 +15,7 @@ const Hero3 = () => {
           />
         </div>
 
-        <div className="flex flex-col w-1/2 p-5">
+        <div className=" flex flex-col w-full p-5 md:w-1/2">
           <p className="text-orange font-semibold flex items-center">
             <Image
               src="/mouseclick.svg"
@@ -42,8 +42,8 @@ const Hero3 = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="w-1/2 h-auto flex flex-col  justify-center p-5">
+      <div className="flex flex-col items-center justify-center md:flex-row">
+        <div className="w-full h-auto flex flex-col  justify-center p-5 md:w-1/2">
           <p className="text-orange font-semibold flex items-center">
             <Image
               src="/basketball-icon.svg"
@@ -64,7 +64,7 @@ const Hero3 = () => {
             <li>Échange avec une communauté motivée</li>
           </ul>
         </div>
-        <div className="w-1/2 h-auto p-5">
+        <div className="w-full h-auto p-5 md:w-1/2">
           <Image
             src="/mock2.png"
             alt="mobile application mockup"
