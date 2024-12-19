@@ -32,9 +32,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={montSerrat.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
