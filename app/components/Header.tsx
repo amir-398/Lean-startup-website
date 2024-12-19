@@ -162,7 +162,7 @@ const Header = () => {
                       <div className="flex justify-center">
                         <button
                           type="submit"
-                          className="bg-orange rounded-xl w-44 h-16  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
+                          className="bg-orange rounded-xl w-30 h-10 px-3  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
                           disabled={loading}
                         >
                           {loading ? "Envoi..." : "Envoyer"}
