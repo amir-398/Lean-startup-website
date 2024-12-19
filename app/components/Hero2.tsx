@@ -16,8 +16,8 @@ const Hero2 = () => {
           </div>
 
           <br />
-          <div className="flex flex-col justify-center items-center ">
-            <p className="w-3/4 text-grey text-sm leading-loose">
+          <div className="flex flex-col justify-center items-center">
+            <p className="w-3/4 text-grey text-lg ">
               Organiser un match ou rejoindre une équipe, c’est souvent
               compliqué : horaires, lieux, niveaux... Mais on a la solution pour
               toi !
@@ -25,13 +25,13 @@ const Hero2 = () => {
           </div>
         </div>
         <div className="flex ">
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-lg">
             NOTRE APPLICATION TE PERMET DE:
           </p>
         </div>
       </div>
       <div className=" h-3/4 flex mt-3 flex-col w-full lg:flex-row ">
-        <div className="bg-green text-white rounded-3xl w-full flex flex-col items-center p-5 mb-2 lg:w-1/2 mr-2">
+        <div className="bg-green text-white rounded-3xl w-full flex flex-col items-center p-5 mb-2 lg:w-1/2 mr-2 ">
           <h2 className=" font-semibold text-3xl">
             Trouver des joueurs près de chez toi
           </h2>
@@ -51,13 +51,13 @@ const Hero2 = () => {
           </div>
         </div>
         <div className="w-full flex flex-col lg:w-1/2 mr-2">
-          <div className=" bg-white3 rounded-3xl ml-2 mb-2 mt-2 flex flex-col p-5">
+          <div className=" bg-white3 rounded-3xl ml-2 mb-2 mt-2 flex flex-col p-5 ">
             <h2 className="font-bold text-3xl">
               Organiser rapidement des matchs
             </h2>
             <div className="flex">
               <div className=" w-3/5">
-                <p className="text-grey text-sm leading-loose">
+                <p className="text-grey text-lg leading-loose">
                   Choisis le lieu, l’heure et le niveau, invite des joueurs en
                   quelques clics et laisse notre algorithme s’occuper du reste
                 </p>
@@ -73,12 +73,12 @@ const Hero2 = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white3 rounded-3xl ml-2 mt-2 p-5">
+          <div className="bg-white3 flex-1 rounded-3xl ml-2 mt-2 p-5">
             <h2 className="font-bold text-3xl">
               Créer des équipes selon ton niveau
             </h2>
             <br />
-            <p className="text-grey text-sm">
+            <p className="text-grey text-lg">
               Des avantages pour rendre tes matchs encore meilleurs
             </p>
           </div>
