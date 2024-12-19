@@ -55,12 +55,13 @@ const Hero1 = () => {
   };
 
   return (
-    <section className="flex flex-col justify-between items-center px-20 py-10 font-medium md:flex-row ">
+    <section className="flex flex-col justify-between items-center px-5 py-10 font-medium md:flex-row md:px-20">
       <div className=" flex w-full justify-center flex-col flex-1 items-center md:w-1/2">
         <div className="lg:mb-5">
           <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
           <h1 className="font-bold text-5xl">Trouves ton équipe.</h1>
         </div>
+        <br />
         <p className="mb-5">
           Connecte-toi à des passionnés de sports collectifs près
           <br /> de chez toi. Organise, joue et partage des moments <br />{" "}
