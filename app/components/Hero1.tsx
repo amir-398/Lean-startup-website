@@ -69,7 +69,7 @@ const Hero1 = () => {
         <Popover>
           <PopoverTrigger asChild>
             <button className="bg-orange rounded-3xl pl-2 pr-2 pt-1 pb-1 text-gray-50 w-40 flex items-center justify-center">
-              Je m&aposinscris
+              Je m&apos;inscris
               <Image
                 className="ml-2"
                 src="/right-arrow.svg"
@@ -96,7 +96,7 @@ const Hero1 = () => {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none">Inscriptions</h4>
                       <p className="text-sm text-gray">
-                        L&aposapplication est en cours de développement.
+                        L&apos;application est en cours de développement.
                       </p>
                     </div>
                     <div className="grid gap-2">

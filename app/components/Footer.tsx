@@ -121,7 +121,7 @@ export default function Footer() {
           <Link href="/contact">Mentions légales</Link>
           <Link href="/contact">Termes et conditions</Link>
           <Link href="/contact">Politique de confidentialité</Link>
-          <Link href="/contact">Télécharger l&apos;application</Link>
+          <Link href="/contact">Télécharger l&apos;;application</Link>
         </div>
       </div>
       <div className="w-full h-0.5 bg-gray-200 sm:my-0 my-5"></div>

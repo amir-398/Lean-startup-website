@@ -165,7 +165,7 @@ const Hero5 = () => {
           <PopoverTrigger asChild>
             <button className="bg-white rounded-3xl font-semibold p-3">
               <p>
-                <span className="text-orange">GO!</span> m&aposinscrire
+                <span className="text-orange">GO!</span> m&apos;inscrire
               </p>
             </button>
           </PopoverTrigger>
@@ -186,7 +186,7 @@ const Hero5 = () => {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none">Inscriptions</h4>
                       <p className="text-sm text-gray">
-                        L&aposapplication est en cours de développement.
+                        L&apos;application est en cours de développement.
                       </p>
                     </div>
                     <div className="grid gap-2">
