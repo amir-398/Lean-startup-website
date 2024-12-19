@@ -3,8 +3,8 @@ import React from "react";
 
 const Hero2 = () => {
   return (
-    <section className="bg-white2 flex flex-col px-5 py-10 rounded-3xl font-medium md:px-20">
-      <div className="flex flex-col">
+    <section className="bg-white2 flex flex-col px-5 py-10 rounded-3xl font-medium md:px-10 ">
+      <div className="flex flex-col ">
         <div className="flex flex-col  md:flex-row">
           <div className=" flex flex-col">
             <h3 className="text-orange font-semibold">
@@ -30,7 +30,7 @@ const Hero2 = () => {
           </p>
         </div>
       </div>
-      <div className=" h-3/4 flex mt-3 flex-col w-full lg:flex-row">
+      <div className=" h-3/4 flex mt-3 flex-col w-full lg:flex-row ">
         <div className="bg-green text-white rounded-3xl w-full flex flex-col items-center p-5 mb-2 lg:w-1/2 mr-2">
           <h2 className=" font-semibold text-3xl">
             Trouver des joueurs près de chez toi
@@ -44,8 +44,8 @@ const Hero2 = () => {
             <Image
               src="/iphone16double.png"
               alt="mockup"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               className=""
             />
           </div>
