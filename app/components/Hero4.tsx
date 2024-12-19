@@ -9,10 +9,10 @@ const Hero4 = () => {
       <h3 className="font-bold text-3xl">
         Laisse notre algorithme faire le reste.
       </h3>
-      <div className="flex">
-        <div className="flex flex-wrap w-1/2 p-5">
-          <div className="flex flex-col  w-1/2">
-            <div className="p-3 rounded-lg bg-white3 w-1/6 flex justify-center">
+      <div className="flex flex-col items-center md:flex-row">
+        <div className="flex flex-col flex-wrap w-full p-5 md:flex-row  md:w-1/2">
+          <div className="flex flex-col  md:w-1/2">
+            <div className="p-3 rounded-lg bg-white3 w-1/6 flex justify-center ">
               <Image
                 src="/location.svg"
                 alt="location icon"
@@ -28,7 +28,7 @@ const Hero4 = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  w-1/2">
+          <div className="flex flex-col  md:w-1/2">
             <div className="p-3 rounded-lg bg-white3 w-1/6 flex justify-center">
               <Image
                 src="/sparkles.svg"
@@ -45,7 +45,7 @@ const Hero4 = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  w-1/2">
+          <div className="flex flex-col  md:w-1/2">
             <div className="p-3 rounded-lg bg-white3 w-1/6 flex justify-center">
               <Image
                 src="/preferences.svg"
@@ -62,7 +62,7 @@ const Hero4 = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col  w-1/2">
+          <div className="flex flex-col  md:w-1/2">
             <div className="p-3 rounded-lg bg-white3 w-1/6 flex justify-center">
               <Image src="/graph.svg" alt="graph icon" width={24} height={24} />
             </div>
@@ -75,13 +75,13 @@ const Hero4 = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 p-5">
+        <div className="w-full md:w-1/2 p-5">
           <Image
             src="/graph.png"
             alt="graph"
             width={500}
             height={500}
-            className="bg-orange rounded-3xl mr-20"
+            className=" bg-orange rounded-3xl mr-20"
           />
         </div>
       </div>

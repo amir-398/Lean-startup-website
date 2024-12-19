@@ -10,8 +10,8 @@ import Image from "next/image";
 const Hero5 = () => {
   return (
     <section className="flex flex-col px-20 py-10 rounded-3xl font-medium items-center ">
-      <div className="flex p-5">
-        <div className="flex flex-col w-1/2 p-5 flex-shrink-0 overflow-auto">
+      <div className="flex p-5 flex-col w-full md:flex-row">
+        <div className="flex flex-col w-full md:w-1/2 p-5 flex-shrink-0 overflow-auto">
           <p className="text-orange font-semibold flex items-center">FAQ</p>
           <h3 className="font-bold text-3xl">
             Une question ? Voici quelques réponses.
@@ -22,7 +22,7 @@ const Hero5 = () => {
             ta réponse ici, notre équipe est toujours prête à t’aider !
           </p>
         </div>
-        <div className="flex flex-col w-1/2 p-5">
+        <div className="flex flex-row flex-wrap md:flex-col w-full md:w-1/2 p-5">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
@@ -101,7 +101,7 @@ const Hero5 = () => {
           </Accordion>
         </div>
       </div>
-      <div className="bg-orange w-50 h-50 rounded-xl w-1/2 px-20 py-10 relative test4 overflow-hidden">
+      <div className="bg-orange rounded-xl w-4/5 p-10 relative overflow-hidden">
         <h3 className="font-bold text-3xl text-white">
           Prêt à rejoindre le jeu ?{" "}
         </h3>
@@ -115,13 +115,15 @@ const Hero5 = () => {
             <span className="text-orange">GO!</span> m'inscrire
           </p>
         </button>
-        <Image
-          src="/basketball-black.svg"
-          alt="basketball"
-          width={300}
-          height={300}
-          className="absolute right-0 top-0 z-index-0"
-        />
+        <div className="hidden md:block">
+          <Image
+            src="/ball.png"
+            alt="basketball"
+            width={470}
+            height={470}
+            className="  absolute right-0 bottom-0 z-index-0"
+          />
+        </div>
       </div>
     </section>
   );
