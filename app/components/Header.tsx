@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="px-20">
+    <div className="px-20 pt-2">
       <header className="flex justify-around items-center bg-white2 p-2  rounded-3xl ">
         <div className="flex items-center">
           <Image src="/logo.svg" alt="logo" width={24} height={24} />

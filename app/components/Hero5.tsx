@@ -101,7 +101,7 @@ const Hero5 = () => {
           </Accordion>
         </div>
       </div>
-      <div className="bg-orange w-50 h-50 rounded-xl w-1/2 px-20 py-10 relative test4 overflow-hidden">
+      <div className="bg-orange rounded-xl w-4/5 p-10 relative overflow-hidden">
         <h3 className="font-bold text-3xl text-white">
           Prêt à rejoindre le jeu ?{" "}
         </h3>
@@ -116,11 +116,11 @@ const Hero5 = () => {
           </p>
         </button>
         <Image
-          src="/basketball-black.svg"
+          src="/ball.png"
           alt="basketball"
-          width={300}
-          height={300}
-          className="absolute right-0 top-0 z-index-0"
+          width={470}
+          height={470}
+          className="absolute right-0 bottom-0 z-index-0"
         />
       </div>
     </section>
