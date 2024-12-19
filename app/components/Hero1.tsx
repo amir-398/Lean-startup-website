@@ -55,130 +55,134 @@ const Hero1 = () => {
   };
 
   return (
-    <section className="flex flex-col justify-between items-center px-5 py-10 font-medium md:flex-row md:px-20">
-      <div className=" flex w-full justify-center flex-col flex-1 items-center md:w-1/2">
-        <div className="lg:mb-5">
-          <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
-          <h1 className="font-bold text-5xl">Trouves ton équipe.</h1>
+    <section className="flex flex-col justify-between items-center px-5 py-2 font-medium md:flex-row md:px-20 md:py-10">
+      <div className=" flex flex-1 justify-center flex-col items-end md:w-1/2">
+        <div>
+          <div className="lg:mb-5">
+            <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
+            <h1 className="font-bold text-5xl">Trouves ton équipe.</h1>
+          </div>
+          <br />
+          <p className="mb-5">
+            Connecte-toi à des passionnés de sports collectifs près
+            <br /> de chez toi. Organise, joue et partage des moments <br />{" "}
+            uniques. Inscris-toi en avant-première
+          </p>
+          <Popover>
+            <PopoverTrigger asChild>
+              <button className="bg-orange rounded-3xl px-4 py-3 text-gray-50 w-40 flex items-center justify-center">
+                Je m&apos;inscris
+                <Image
+                  className="ml-2"
+                  src="/right-arrow.svg"
+                  alt="arrow icon"
+                  width={24}
+                  height={24}
+                />
+              </button>
+            </PopoverTrigger>
+            <PopoverContent className="w-80">
+              <div className="grid gap-4 justify-center">
+                <Formik
+                  initialValues={{
+                    email: "",
+                    prénom: "",
+                    nom: "",
+                    dateDeNaissance: "",
+                  }}
+                  validationSchema={validationSchema}
+                  onSubmit={submitBtn}
+                >
+                  {({ handleSubmit }) => (
+                    <Form onSubmit={handleSubmit} className="space-y-4">
+                      <div className="space-y-2">
+                        <h4 className="font-medium leading-none">
+                          Inscriptions
+                        </h4>
+                        <p className="text-sm text-gray">
+                          L&apos;application est en cours de développement.
+                        </p>
+                      </div>
+                      <div className="grid gap-2">
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
+                          <Label htmlFor="nom">Nom</Label>
+                          <Field
+                            id="nom"
+                            name="nom"
+                            as={Input}
+                            className="col-span-2 h-8"
+                          />
+                          <ErrorMessage
+                            name="nom"
+                            component="div"
+                            className="text-red-500 text-sm mt-1"
+                          />
+                        </div>
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
+                          <Label htmlFor="prénom">Prénom</Label>
+                          <Field
+                            id="prénom"
+                            name="prénom"
+                            as={Input}
+                            className="col-span-2 h-8"
+                          />
+                          <ErrorMessage
+                            name="prénom"
+                            component="div"
+                            className="text-red-500 text-sm mt-1"
+                          />
+                        </div>
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
+                          <Label htmlFor="email">Email</Label>
+                          <Field
+                            id="email"
+                            name="email"
+                            as={Input}
+                            className="col-span-2 h-8"
+                          />
+                          <ErrorMessage
+                            name="email"
+                            component="div"
+                            className="text-red-500 text-sm mt-1"
+                          />
+                        </div>
+                        <div className="grid grid-cols-3 items-center gap-4 flex-row">
+                          <Label htmlFor="dateDeNaissance">
+                            Date de naissance
+                          </Label>
+                          <Field
+                            id="dateDeNaissance"
+                            name="dateDeNaissance"
+                            as={Input}
+                            type="date"
+                            className="col-span-2 h-8"
+                          />
+                          <ErrorMessage
+                            name="dateDeNaissance"
+                            component="div"
+                            className="text-red-500 text-sm mt-1"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex justify-center">
+                        <button
+                          type="submit"
+                          className="bg-orange rounded-3xl w-30 h-10 px-3  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
+                          disabled={loading}
+                        >
+                          {loading ? "Envoi..." : "Envoyer"}
+                        </button>
+                      </div>
+                    </Form>
+                  )}
+                </Formik>
+              </div>
+            </PopoverContent>
+          </Popover>
         </div>
-        <br />
-        <p className="mb-5">
-          Connecte-toi à des passionnés de sports collectifs près
-          <br /> de chez toi. Organise, joue et partage des moments <br />{" "}
-          uniques. Inscris-toi en avant-première
-        </p>
-        <Popover>
-          <PopoverTrigger asChild>
-            <button className="bg-orange rounded-3xl pl-2 pr-2 pt-1 pb-1 text-gray-50 w-40 flex items-center justify-center">
-              Je m&apos;inscris
-              <Image
-                className="ml-2"
-                src="/right-arrow.svg"
-                alt="arrow icon"
-                width={24}
-                height={24}
-              />
-            </button>
-          </PopoverTrigger>
-          <PopoverContent className="w-80">
-            <div className="grid gap-4 justify-center">
-              <Formik
-                initialValues={{
-                  email: "",
-                  prénom: "",
-                  nom: "",
-                  dateDeNaissance: "",
-                }}
-                validationSchema={validationSchema}
-                onSubmit={submitBtn}
-              >
-                {({ handleSubmit }) => (
-                  <Form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="space-y-2">
-                      <h4 className="font-medium leading-none">Inscriptions</h4>
-                      <p className="text-sm text-gray">
-                        L&apos;application est en cours de développement.
-                      </p>
-                    </div>
-                    <div className="grid gap-2">
-                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
-                        <Label htmlFor="nom">Nom</Label>
-                        <Field
-                          id="nom"
-                          name="nom"
-                          as={Input}
-                          className="col-span-2 h-8"
-                        />
-                        <ErrorMessage
-                          name="nom"
-                          component="div"
-                          className="text-red-500 text-sm mt-1"
-                        />
-                      </div>
-                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
-                        <Label htmlFor="prénom">Prénom</Label>
-                        <Field
-                          id="prénom"
-                          name="prénom"
-                          as={Input}
-                          className="col-span-2 h-8"
-                        />
-                        <ErrorMessage
-                          name="prénom"
-                          component="div"
-                          className="text-red-500 text-sm mt-1"
-                        />
-                      </div>
-                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
-                        <Label htmlFor="email">Email</Label>
-                        <Field
-                          id="email"
-                          name="email"
-                          as={Input}
-                          className="col-span-2 h-8"
-                        />
-                        <ErrorMessage
-                          name="email"
-                          component="div"
-                          className="text-red-500 text-sm mt-1"
-                        />
-                      </div>
-                      <div className="grid grid-cols-3 items-center gap-4 flex-row">
-                        <Label htmlFor="dateDeNaissance">
-                          Date de naissance
-                        </Label>
-                        <Field
-                          id="dateDeNaissance"
-                          name="dateDeNaissance"
-                          as={Input}
-                          type="date"
-                          className="col-span-2 h-8"
-                        />
-                        <ErrorMessage
-                          name="dateDeNaissance"
-                          component="div"
-                          className="text-red-500 text-sm mt-1"
-                        />
-                      </div>
-                    </div>
-                    <div className="flex justify-center">
-                      <button
-                        type="submit"
-                        className="bg-orange rounded-3xl w-30 h-10 px-3  text-gray-50 font-bold flex items-center justify-center cursor-pointer"
-                        disabled={loading}
-                      >
-                        {loading ? "Envoi..." : "Envoyer"}
-                      </button>
-                    </div>
-                  </Form>
-                )}
-              </Formik>
-            </div>
-          </PopoverContent>
-        </Popover>
       </div>
-      <div className=" flex justify-center absolute right-24">
-        <div className=" rotate flex justify-center">
+      <div className=" flex justify-start flex-1">
+        <div className="rotate flex justify-center md:pl-10 md:ml-5">
           <Image
             src="/iphone16double.png"
             alt="mockup"

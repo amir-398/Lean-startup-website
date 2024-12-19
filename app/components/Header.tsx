@@ -72,7 +72,7 @@ const Header = () => {
         <div>
           <Popover>
             <PopoverTrigger asChild>
-              <button className="hidden bg-orange rounded-3xl pl-2 pr-2 pt-1 pb-1 text-gray-50 w-40 sm:flex items-center justify-center">
+              <button className="hidden bg-orange rounded-3xl px-4 py-3 text-gray-50 w-40 sm:flex items-center justify-center">
                 S&apos;inscrire
               </button>
             </PopoverTrigger>
