@@ -3,19 +3,56 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --green: #168177;
+  --blue: #0a0f33;
+  --orange: #f97e4b;
+  --white: #ffffff;
+  --white-2: #f3f3f3;
+  --white-3: #e7e7e7;
+  --grey: #707070;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.test1 {
+  border: 2px solid var(--green);
+}
+
+.test2 {
+  border: 2px solid aqua;
+}
+
+.test3 {
+  border: 2px solid var(--orange);
+}
+
+.test4 {
+  border: 2px solid purple;
+}
+
+.test5 {
+  border: 2px solid red;
+}
+
+.rotate-transform {
+  transform: rotate(26deg) translateY(50px);
+}
+
+.rotate {
+  transform: rotate(26deg);
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
