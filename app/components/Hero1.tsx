@@ -60,7 +60,7 @@ const Hero1 = () => {
         <div>
           <div className="lg:mb-5">
             <h1 className="font-bold text-5xl">Rejoins le jeu.</h1>
-            <h1 className="font-bold text-5xl">Trouves ton équipe.</h1>
+            <h1 className="font-bold text-5xl">Trouve ton équipe.</h1>
           </div>
           <br />
           <p className="mb-5">
