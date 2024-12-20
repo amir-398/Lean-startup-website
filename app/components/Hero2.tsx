@@ -16,12 +16,13 @@ const Hero2 = () => {
           </div>
 
           <br />
-          <div className="flex flex-col justify-center items-center">
-            <p className="w-3/4 text-grey text-lg ">
+          <div className="flex flex-col md:justify-end items-center border">
+            <p className="w-full text-grey text-lg">
               Organiser un match ou rejoindre une équipe, c’est souvent
               compliqué : horaires, lieux, niveaux... Mais on a la solution pour
               toi !
             </p>
+            <br />
           </div>
         </div>
         <div className="flex ">
