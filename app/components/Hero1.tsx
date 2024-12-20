@@ -55,7 +55,7 @@ const Hero1 = () => {
   };
 
   return (
-    <section className="flex flex-col justify-between items-center px-5 py-2 font-medium md:flex-row md:px-20 md:py-10">
+    <section className="flex flex-col justify-between items-center px-5 py-12 font-medium md:flex-row md:px-20">
       <div className=" flex flex-1 justify-center flex-col items-end md:w-1/2">
         <div>
           <div className="lg:mb-5">
