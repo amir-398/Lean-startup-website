@@ -16,7 +16,7 @@ const Hero2 = () => {
           </div>
 
           <br />
-          <div className="flex flex-col md:justify-end items-center border">
+          <div className="flex flex-col md:justify-end items-center">
             <p className="w-full text-grey text-lg">
               Organiser un match ou rejoindre une équipe, c’est souvent
               compliqué : horaires, lieux, niveaux... Mais on a la solution pour
